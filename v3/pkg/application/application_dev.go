@@ -40,10 +40,6 @@ func (a *App) preRun() error {
 }
 
 func (a *App) postQuit() {
-	if devMode {
-		a.Logger.Info("The application has terminated, but the watcher is still running.")
-		a.Logger.Info("To terminate the watcher, press CTRL+C")
-	}
 }
 
 func (a *App) enableDevTools() {
